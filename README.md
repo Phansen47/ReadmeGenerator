@@ -1,8 +1,8 @@
 
-# Friendship
+# README Generator [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-We are best friends
+You can use this README generator to prompt you through the process of making a comprehensive README using node.js with the inquirer package.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,19 +13,19 @@ We are best friends
 - [Questions](#questions)
 
 ## Installation
-install node.js, use npm i inqurier@8.2.4
+Ensure you have node.js installed, intialize in the READMEGENERATOR file by using "npm init -y" in the terminal, install inquirer v 8.2.4 "npm i inquirer@8.2.4", then run "node index.js" ensuring you've opened the terminal in the correct file.
 
 ## Usage
-use node index.js to access the code
+Once you've run the "node index.js" command it will prompt you through your project title, description, installation instructions, usage instructions, contributing guidelines, test instructions, license, github username and email.
 
 ## License
-This application is covered under the MIT license. [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+This application is covered under the MIT license. 
 
 ## Contributing
-Dont contribute
+No contributions please.
 
 ## Tests
-no testing
+No test instructions.
 
 ## Questions
 For questions or additional information, contact [Phansen47](https://github.com/Phansen47) or email at paxtonstanleyhansen@gmail.com.

@@ -1,6 +1,8 @@
+// Intial setting of variables
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// Defines a list of questions for the user's input
 const questions = [
   {
     type: 'input',
@@ -50,11 +52,10 @@ const questions = [
   },
 ];
 
-// Function to generate the README.md file
+// function to generate the HTML of the README based on the previous user inputs
 function generateReadme(answers) {
-  // Create the content of the README
   const readmeContent = `
-# ${answers.title}
+# ${answers.title} [![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
 
 ## Description
 ${answers.description}
@@ -74,7 +75,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-This application is covered under the ${answers.license} license. [![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
+This application is covered under the ${answers.license} license. 
 
 ## Contributing
 ${answers.contributing}
@@ -92,4 +93,5 @@ For questions or additional information, contact [${answers.githubUsername}](htt
   });
 }
 
+// Defines the inquirer prompts
 inquirer.prompt(questions).then(generateReadme);
